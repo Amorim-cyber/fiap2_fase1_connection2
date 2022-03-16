@@ -4,10 +4,10 @@
              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
              http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
              version="2.1">
-	<persistence-unit name="Bar-Project" transaction-type="RESOURCE_LOCAL">
+	<persistence-unit name="Bar-Project">
 	
 			<provider>
-			org.hibernate.jpa.HibernatePersistenceProvider
+			org.hibernate.ejb.HibernatePersistence
 			</provider>
 			
 			<class>br.com.bar.domain.Cliente</class>
