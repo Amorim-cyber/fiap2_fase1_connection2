@@ -45,7 +45,7 @@ public class BebidaService implements BebidaInterface {
 		List<Bebida> bebidas = new ArrayList<Bebida>();
 		
 		try {
-			bebidas = em.createQuery("select * from Bebida",Bebida.class).getResultList();
+			bebidas = em.createQuery("select e from Bebida e",Bebida.class).getResultList();
 			
 		}catch(Exception e) {
 			if(em.getTransaction().isActive()) {

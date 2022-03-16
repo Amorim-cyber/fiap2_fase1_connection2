@@ -75,7 +75,12 @@ public class BebidaDAO {
 	public void setComandas(List<Comanda> comandas) {
 		this.comandas = comandas;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "BebidaDAO [id=" + id + ", nome=" + nome + ", tipo=" + tipo + ", descricao=" + descricao + ", price="
+				+ price +"]";
+	}
 	
 	
 }
