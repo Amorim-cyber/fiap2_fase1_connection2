@@ -27,7 +27,7 @@ public class Cliente {
 	@Column(name="cel_cliente",nullable=false)
 	private int celular;
 	
-	@Column(name="cel_cliente",nullable=true)
+	@Column(name="cpf_cliente",nullable=true)
 	private int cpf;
 	
 	@Column(name="e_cliente",nullable=true,length=100)
@@ -42,7 +42,9 @@ public class Cliente {
 	public Cliente() {
 	}
 
-	public Cliente(int id, String nome, int celular, int cpf, String email, String sexo) {
+	
+
+	public Cliente(int id, String nome, int celular, int cpf, String email, String sexo, List<Comanda> comandas) {
 		
 		this.id = id;
 		this.nome = nome;
@@ -50,7 +52,10 @@ public class Cliente {
 		this.cpf = cpf;
 		this.email = email;
 		this.sexo = sexo;
+		this.comandas = comandas;
 	}
+
+
 
 	public int getId() {
 		return id;
@@ -98,6 +103,14 @@ public class Cliente {
 
 	public void setSexo(String sexo) {
 		this.sexo = sexo;
+	}
+
+	public List<Comanda> getComandas() {
+		return comandas;
+	}
+
+	public void setComandas(List<Comanda> comandas) {
+		this.comandas = comandas;
 	}
 	
 	
