@@ -16,7 +16,7 @@ public class ClienteService implements ClienteInterface {
 
 	@Override
 	public void save(ClienteDAO dao) {
-		EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("Bar-Project");
+		EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("barproject");
 		EntityManager em = fabrica.createEntityManager();
 		
 		try {
@@ -38,7 +38,7 @@ public class ClienteService implements ClienteInterface {
 
 	@Override
 	public List<ClienteDAO> findAll() {
-		EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("Bar-Project");
+		EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("barproject");
 		EntityManager em = fabrica.createEntityManager();
 		
 		List<Cliente> clientes = new ArrayList<Cliente>();
@@ -60,7 +60,7 @@ public class ClienteService implements ClienteInterface {
 
 	@Override
 	public ClienteDAO find(int cpf) {
-		EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("Bar-Project");
+		EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("barproject");
 		EntityManager em = fabrica.createEntityManager();
 		
 		Cliente cliente = null;
@@ -81,7 +81,7 @@ public class ClienteService implements ClienteInterface {
 
 	@Override
 	public void update(ClienteDAO dao) {
-		EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("Bar-Project");
+		EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("barproject");
 		EntityManager em = fabrica.createEntityManager();
 		
 		
@@ -104,7 +104,7 @@ public class ClienteService implements ClienteInterface {
 
 	@Override
 	public void delete(int id) {
-		EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("Bar-Project");
+		EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("barproject");
 		EntityManager em = fabrica.createEntityManager();
 		
 		Cliente cliente = em.find(Cliente.class, id);

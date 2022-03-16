@@ -17,7 +17,7 @@ public class BebidaService implements BebidaInterface {
 	@Override
 	public void save(BebidaDAO dao) {
 		
-		EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("Bar-Project");
+		EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("barproject");
 		EntityManager em = fabrica.createEntityManager();
 		
 		try {
@@ -39,7 +39,7 @@ public class BebidaService implements BebidaInterface {
 
 	@Override
 	public List<BebidaDAO> findAll() {
-		EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("Bar-Project");
+		EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("barproject");
 		EntityManager em = fabrica.createEntityManager();
 		
 		List<Bebida> bebidas = new ArrayList<Bebida>();
@@ -62,7 +62,7 @@ public class BebidaService implements BebidaInterface {
 	@Override
 	public BebidaDAO find(int id) {
 		
-		EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("Bar-Project");
+		EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("barproject");
 		EntityManager em = fabrica.createEntityManager();
 		
 		Bebida bebida = null;
@@ -83,7 +83,7 @@ public class BebidaService implements BebidaInterface {
 
 	@Override
 	public void update(BebidaDAO dao) {
-		EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("Bar-Project");
+		EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("barproject");
 		EntityManager em = fabrica.createEntityManager();
 		
 		
@@ -105,7 +105,7 @@ public class BebidaService implements BebidaInterface {
 
 	@Override
 	public void delete(int id) {
-		EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("Bar-Project");
+		EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("barproject");
 		EntityManager em = fabrica.createEntityManager();
 		
 		Bebida bebida = em.find(Bebida.class, id);

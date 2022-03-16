@@ -16,7 +16,7 @@ public class ComandaService implements ComandaInterface{
 
 	@Override
 	public void save(ComandaDAO dao) {
-		EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("Bar-Project");
+		EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("barproject");
 		EntityManager em = fabrica.createEntityManager();
 		
 		try {
@@ -38,7 +38,7 @@ public class ComandaService implements ComandaInterface{
 
 	@Override
 	public List<ComandaDAO> findAll() {
-		EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("Bar-Project");
+		EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("barproject");
 		EntityManager em = fabrica.createEntityManager();
 		
 		List<Comanda> comandas = new ArrayList<Comanda>();
@@ -60,7 +60,7 @@ public class ComandaService implements ComandaInterface{
 
 	@Override
 	public ComandaDAO find(int id) {
-		EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("Bar-Project");
+		EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("barproject");
 		EntityManager em = fabrica.createEntityManager();
 		
 		Comanda comanda = null;
@@ -81,7 +81,7 @@ public class ComandaService implements ComandaInterface{
 
 	@Override
 	public void update(ComandaDAO dao) {
-		EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("Bar-Project");
+		EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("barproject");
 		EntityManager em = fabrica.createEntityManager();
 		
 		
@@ -104,7 +104,7 @@ public class ComandaService implements ComandaInterface{
 
 	@Override
 	public void delete(int id) {
-		EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("Bar-Project");
+		EntityManagerFactory fabrica = Persistence.createEntityManagerFactory("barproject");
 		EntityManager em = fabrica.createEntityManager();
 		
 		Comanda comanda = em.find(Comanda.class, id);
