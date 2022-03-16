@@ -11,6 +11,7 @@ request.setAttribute("bebidas",bebidas);
 <!DOCTYPE html>
 <html>
 <head>
+<base href="https://fiap2fase1connection.herokuapp.com/Bar-Project/">
 <meta charset="ISO-8859-1">
 <link rel="stylesheet" href="./resources/css/bootstrap.min.css">
 <link rel="stylesheet" href="./resources/css/bootstrap-icons-1.5.0/bootstrap-icons.css">
@@ -51,7 +52,7 @@ request.setAttribute("bebidas",bebidas);
 					  <tbody id="conta">
 					    
 					  </tbody>
-					  <tfoot id="total" style="display:none;">
+					  <tfoot id="total" style="display:none; ">
 					  		<tr>
 					  		<th scope="col">TOTAL</th>
 					  		<th  scope="col"></th>
