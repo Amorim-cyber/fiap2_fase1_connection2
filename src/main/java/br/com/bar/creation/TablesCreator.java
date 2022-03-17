@@ -7,7 +7,7 @@ public class TablesCreator {
 	public static void main(String[] args) {
 		// ATENÇÃO USAR APENAS PARA CRIAR AS TABELAS DO ZERO
 		
-		Persistence.createEntityManagerFactory("Bar-Project").createEntityManager();
+		Persistence.createEntityManagerFactory("barproject").createEntityManager();
 
 	}
 
