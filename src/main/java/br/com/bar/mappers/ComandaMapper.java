@@ -11,8 +11,6 @@ public class ComandaMapper {
 	public static Comanda toEntity(ComandaDAO dao) {
 		Comanda comanda = new Comanda();
 			comanda.setId(dao.getId());
-			comanda.setDataEntrada(dao.getDataEntrada());
-			comanda.setDataSaida(dao.getDataSaida());
 			comanda.setCliente(dao.getCliente());
 			comanda.setBebidas(dao.getBebidas());
 		return comanda;
@@ -21,8 +19,6 @@ public class ComandaMapper {
 	public static ComandaDAO toDAO(Comanda comanda) {
 		ComandaDAO dao = new ComandaDAO();
 			dao.setId(comanda.getId());
-			dao.setDataEntrada(comanda.getDataEntrada());
-			dao.setDataSaida(comanda.getDataSaida());
 			dao.setCliente(comanda.getCliente());
 			dao.setBebidas(comanda.getBebidas());
 		return dao;

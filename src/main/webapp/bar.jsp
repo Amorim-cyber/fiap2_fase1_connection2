@@ -41,31 +41,31 @@ request.setAttribute("bebidas",bebidas);
 						  	<div class="mb-3 row">
 							    <label style="text-align:end" for="nome" class="col-sm-1 col-form-label">Nome:</label>
 							    <div class="col-sm-11">
-							      <input type="text"  class="form-control" id="nomeCliente" value="">
+							      <input name="nomeCliente" type="text"  class="form-control" id="nomeCliente" value="">
 							    </div>
 							 </div>
 							 <div class="mb-3 row">
 							    <label style="text-align:end" for="celular" class="col-sm-1 col-form-label">Celular:</label>
 							    <div class="col-sm-11">
-							      <input type="number"  class="form-control" id="celularCliente" value="">
+							      <input name="celularCliente" type="number"  class="form-control" id="celularCliente" value="">
 							    </div>
 							 </div>
 							 <div class="mb-3 row">
 							    <label style="text-align:end" for="cpf" class="col-sm-1 col-form-label">CPF:</label>
 							    <div class="col-sm-11">
-							      <input type="number" class="form-control" id="cpfCliente" value="">
+							      <input name="cpfCliente" type="number" class="form-control" id="cpfCliente" value="">
 							    </div>
 							 </div>
 							 <div class="mb-3 row">
 							    <label style="text-align:end" for="email" class="col-sm-1 col-form-label">E-mail:</label>
 							    <div class="col-sm-11">
-							      <input type="email"  class="form-control" id="emailCliente" value="">
+							      <input name="emailCliente" type="email"  class="form-control" id="emailCliente" value="">
 							    </div>
 							 </div>
 							 <div class="mb-3 row">
 							 	<label style="text-align:end" for="sexo" class="col-sm-1 col-form-label">sexo:</label>
 							    <div class="col-sm-3">
-							      <select class="form-select" id="sexoCliente" aria-label="sexo">
+							      <select name="sexoCliente" class="form-select" id="sexoCliente" aria-label="sexo">
 								  <option selected>-</option>
 								  <option value="Masculino">Masculino</option>
 								  <option value="Feminino">Feminino</option>
@@ -96,7 +96,7 @@ request.setAttribute("bebidas",bebidas);
 			  </div>
 			  <div class="accordion-item">
 			    <h2 class="accordion-header" id="flush-headingThree">
-			      <button id="comanda" disabled class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+			      <button id="comanda" disabled  class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
 			        #3 Comanda
 			      </button>
 			    </h2>
@@ -148,8 +148,9 @@ request.setAttribute("bebidas",bebidas);
 						  		</div>
 						  	</div>
 						  <br>
-						  <button type="button" style="width:150px; height:50px" class="btn btn-danger">Fechar conta</button>
-						  
+						  <form action="bar.jsp" method="post">
+						  	<button type="button" style="width:150px; height:50px" class="btn btn-danger">Fechar conta</button>
+						  </form>
 						</div>
 			      </div>
 			    </div>
@@ -158,14 +159,15 @@ request.setAttribute("bebidas",bebidas);
 	</div>
 
 	
+	
 
 
-
-	<script src="../resources/js/guardarCliente.js"></script>
-	<script src="../resources/js/selecionarBebida.js"></script>
-	<script src="../resources/js/inserirBebida.js"></script>
-	<script src="../resources/js/removerBebida.js"></script>
-	<script src="../resources/js/calcularTotal.js"></script>
+	
+	<script src="../resources/js/bebidas/selecionarBebida.js"></script>
+	<script src="../resources/js/bebidas/inserirBebida.js"></script>
+	<script src="../resources/js/bebidas/removerBebida.js"></script>
+	<script src="../resources/js/bebidas/calcularTotal.js"></script>
+	<script src="../resources/js/cliente/guardarCliente.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

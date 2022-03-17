@@ -51,11 +51,9 @@ public class Comanda {
 
 	
 
-	public Comanda(int id, Calendar dataEntrada, Calendar dataSaida, Cliente cliente, List<Bebida> bebidas) {
+	public Comanda(int id, Cliente cliente, List<Bebida> bebidas) {
 		super();
 		this.id = id;
-		this.dataEntrada = dataEntrada;
-		this.dataSaida = dataSaida;
 		this.cliente = cliente;
 		this.bebidas = bebidas;
 	}

@@ -8,6 +8,9 @@ function inserirBebida(){
 	
 	var nome = document.createElement('td');
 	nome.innerHTML = document.getElementById("nomeBebida").getAttribute("placeholder");
+	nome.setAttribute('name','bebidas');
+	nome.setAttribute('value',
+	document.getElementById("listaBebidas").value.split(',')[0].replace("id=",""));
 	
 	var preco = document.createElement('td');
 	preco.innerHTML = document.getElementById("precoBebida").getAttribute("placeholder");

@@ -17,7 +17,7 @@ public class ClienteDAO {
 	public ClienteDAO() {
 	}
 	
-	public ClienteDAO(int id, String nome, int celular, int cpf, String email, String sexo, List<Comanda> comandas) {
+	public ClienteDAO(int id, String nome, int celular, int cpf, String email, String sexo) {
 		
 		this.id = id;
 		this.nome = nome;
@@ -25,7 +25,6 @@ public class ClienteDAO {
 		this.cpf = cpf;
 		this.email = email;
 		this.sexo = sexo;
-		this.comandas = comandas;
 	}
 
 

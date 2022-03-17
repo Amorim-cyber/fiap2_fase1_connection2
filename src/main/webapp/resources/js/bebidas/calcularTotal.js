@@ -8,7 +8,6 @@ function calcularTotal(){
 		for(let i=0; i< pedidos.length; i++){
 			 total += parseFloat(pedidos[i].getElementsByTagName("td")[1].innerHTML
 					.replace("R$ ","").replace(",","."));
-			console.log(total);
 		}
 		
 		document.getElementById("valorTotal").innerHTML =
